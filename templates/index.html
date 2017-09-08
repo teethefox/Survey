@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index2.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/process" method="post">
+    <h4> Name:</h4>
+    <input id = "name" type="text" name="name">
+    <h4> Location:
+    <select name="location">
+        <option value="SanJose">San Jose</option>
+        <option value="Berkley">Berkley</option>
+        <option value="Seattle">Seattle</option>
+        <option value="Other">Other</option>
+      </select></h4>
+      <h4>Favorite Language</h4>
+      <select name="language">
+        <option value="Python">Python</option>
+        <option value="JS">JavaScript</option>
+        <option value="Ruby">Ruby</option>
+        <option value="Other">Other</option>
+      </select>
+      <h4>Leave us a comment(:</h4>
+      <input id= "comment" type="text" name="comment">
+      <input id="submit" type="submit" value="Submit">
+</form>
+      
+</body>
+</html>
+
