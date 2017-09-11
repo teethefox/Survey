@@ -1,5 +1,5 @@
 body{
-    font-size:2.3em;
+    font-size:2em;
     padding-top:24%;
     background-image: url(ein.jpg);
     color:white;
@@ -9,15 +9,15 @@ body{
 h2{
     background-color:black;
     padding:10px;
-    height:200px;
     width:25%;
-    margin-bottom:-70px;
+    margin-bottom:-90px;
     position:relative;
-    left:46%;
-    padding:3%;
-    padding-bottom:5%;
+    left:40%;
+    top:-250px;
+    padding:2%;
+    padding-bottom:10%;
     text-overflow:ellipsis;
-    border-radius:20px;
+    border-radius:25px;
     text-align:center;
 
 }

@@ -7,7 +7,14 @@
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='process2.css') }}">
     <title>Document</title>
 </head>
-<body>
+<body> 
+    <h2>{% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+        <p>{{message}}</p>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}</h2>
     <h2>Name:<br>{{name}}</h2>
     <h2>Location:<br> {{location}}</h2>
     <h2>Language:<br> {{language}}</h2>
